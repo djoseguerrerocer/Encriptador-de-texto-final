@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <img class="logo" src="./assets/Logo.png" alt="logo">
+    </header>
+    <main>
+        <section class="area-ingreso-texto">
+            <textarea class="text-area" col="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="mensaje-advertencia">
+                <img class="advertencia" src="./assets/Vector.png" alt="Simbolo de advertencia">
+                <h6 class="informacion-de-uso">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+            
+        </section>
+        <section class="zona-texto-encriptado">
+            <div class="zonaTextoEncriptadoContenedor">
+                <img class="img-munieco" alt="Imagen muñeco" src="./assets/Munieco.png">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea class="area-encriptada" col="20" row="10" readonly></textarea>
+            <button class="boton-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="mensaje-diseño">Diseñado y desarrollado por Daniel José Guerrero Cerón</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
